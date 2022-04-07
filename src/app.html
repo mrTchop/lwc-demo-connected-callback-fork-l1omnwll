@@ -1,0 +1,8 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<lightning-input onchange={handleChange} type="toggle" label="Show" name="input1"></lightning-input>
+		<div class="slds-p-around_x-large">
+			<c-child if:true={show} label="this is the child"></c-child>
+		</div>
+	</div>
+</template>
